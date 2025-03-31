@@ -1,5 +1,7 @@
+
+import AboutMe from "./components/Aboutme"
 import { Experience } from "./components/Experience"
-import HeaderAboutMe from "./components/HeaderAboutMe"
+import { Header } from "./components/Header"
 import { Projects } from "./components/Projects"
 
 
@@ -8,10 +10,12 @@ function App() {
   return (
     <>
     <div className="container">
-      <HeaderAboutMe></HeaderAboutMe>
-      <Experience></Experience>
-      <Projects></Projects>
-
+      <Header></Header>
+      <div className="main-content">
+        <AboutMe></AboutMe>
+        <Experience></Experience>
+        <Projects></Projects>
+      </div>
     </div>
     </>
   )

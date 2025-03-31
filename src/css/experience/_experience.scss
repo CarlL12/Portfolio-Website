@@ -1,40 +1,28 @@
 .experience {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 120px;  
+  margin-top: 120px;
 
-    @media (max-width: 1000px){
-        display: block;
+  .exp-card {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out;
+
+    @media (max-width: 1000px) {
+      display: block;
+
+      h5 {
+        font-size: 16px;
+      }
     }
-    .content {
-
-        .exp-card {
-            display: grid;
-            grid-template-columns: 1fr 1.5fr;
-            margin-top: 40px;
-            padding: 10px;
-            border-radius: 10px;
-            transition: background-color 0.2s ease-in-out;
-
-            @media (max-width: 1000px){
-                display: block;
-
-                h5 {
-
-                    font-size: 16px;
-                }
-            }
-            &:hover {
-
-                background-color: #2dd4be28;
-                cursor: pointer;
-            }
-            .date {
-
-            }
-            .text {
-
-            }
-        }   
+    &:hover {
+      background-color: #2dd4be28;
+      cursor: pointer;
     }
+    .date {
+    }
+    .text {
+    }
+  }
 }
