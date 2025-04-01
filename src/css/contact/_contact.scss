@@ -1,0 +1,26 @@
+.contact {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  grid-column: span 2;
+  padding-top: 100px;
+
+  p {
+    width: 70%;
+  }
+
+  .contact-btn {
+    color: #2dd4be;
+    border-color: #2dd4bef8;
+    background-color: #0f172a;
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background-color: #2dd4be98;
+      color: black;
+    }
+  }
+}

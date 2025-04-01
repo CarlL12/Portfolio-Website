@@ -109,7 +109,12 @@ h3 {
 .section-title::after {
   margin-left: 20px;
 }
+
 .container {
+  margin-bottom: 100px;
+}
+
+.content {
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;

@@ -6,7 +6,7 @@ export const Projects = () => {
     <section className="projects" id="projects">
       <h3 className="section-title">Projects</h3>
       <div className="project-card">
-        <img src="" alt="" />
+        <p>EC Utbildning</p>
         <div className="text">
           <h5>JavaScript Backend project</h5>
           <p>

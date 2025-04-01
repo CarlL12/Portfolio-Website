@@ -9,6 +9,10 @@
     border-radius: 10px;
     transition: background-color 0.2s ease-in-out;
 
+    p {
+      font-size: 12px;
+    }
+
     @media (max-width: 1000px) {
       display: block;
 
