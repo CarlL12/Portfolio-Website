@@ -13,18 +13,20 @@
     border-radius: 10px;
     transition: background-color 0.2s ease-in-out;
 
+    @media (max-width: 1000px) {
+      display: block;
+
+      h5 {
+        font-size: 16px;
+      }
+    }
+
     p {
       font-size: 12px;
     }
 
-    &:hover {
-      background-color: #2dd4be28;
-      cursor: pointer;
-    }
     .text {
       @media (max-width: 1000px) {
-        display: block;
-
         h5 {
           font-size: 16px;
         }

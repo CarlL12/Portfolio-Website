@@ -21,7 +21,6 @@ const useActiveSection = () => {
     return () => observer.disconnect();
   }, []);
 
-  console.log(activeSection);
   return activeSection;
 };
 
