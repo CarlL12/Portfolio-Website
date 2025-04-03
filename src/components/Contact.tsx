@@ -1,3 +1,6 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export const Contact = () => {
   return (
     <>
@@ -9,7 +12,9 @@ export const Contact = () => {
           from you.
         </p>
         <a href="mailto:carllindqvist93@gmail.com">
-          <button className="contact-btn">Get in Touch</button>
+          <button className="contact-btn">
+            Get in Touch <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+          </button>
         </a>
       </section>
     </>
