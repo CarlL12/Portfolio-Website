@@ -1,10 +1,18 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBoxOpen,
+  faCoffee,
+  faHardHat,
+  faPersonDigging,
+  faSpinner,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Projects = () => {
   return (
     <section className="projects" id="projects">
       <h3 className="section-title">Projects</h3>
+
       <div className="project-card">
         <p>EC Utbildning</p>
         <div className="text">
@@ -43,6 +51,59 @@ export const Projects = () => {
             >
               <FontAwesomeIcon icon={faGithub} size="2x"></FontAwesomeIcon>
             </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-card">
+        <p>EC Utbildning</p>
+        <div className="text">
+          <h5>Data storage project </h5>
+          <p>
+            In this project, I modeled two databases—one for products and
+            another for contacts. To streamline database management, I utilized
+            SQL Express as the server and implemented Entity Framework Core.
+          </p>
+          <p>
+            For building the contact database, I opted for the Code First
+            approach, while I employed the Database First approach for the
+            product database. To enhance data access and manipulation with
+            consistency, I implemented a generic repository within a console
+            app. This allowed for uniform and reusable codebase for various CRUD
+            operations on the databases.
+          </p>
+          <p>
+            In order to validate the correctness and intended functionality of
+            the project's logic,testing was carried out using xUnit. This
+            testing ensured the quality and reliability of the code
+          </p>
+          <div className="technical-btn-list">
+            <button className="btn-green">.NET</button>
+            <button className="btn-green">C#</button>
+            <button className="btn-green">SQL</button>
+          </div>
+          <div className="social-media">
+            <a
+              href="https://github.com/CarlL12/LocalDatabaseProject"
+              target="_blank"
+            >
+              <FontAwesomeIcon icon={faGithub} size="2x"></FontAwesomeIcon>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="project-card">
+        <p>Personal Projects</p>
+        <div className="text">
+          <h5> </h5>
+          <p>
+            Code is brewing – please stand by{" "}
+            <FontAwesomeIcon icon={faCoffee} />
+          </p>
+          <div className="technical-btn-list"></div>
+          <div className="social-media d-flex justify-content-center">
+            <FontAwesomeIcon icon={faSpinner} spinPulse size="6x" />
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ export const Footer = () => {
       <p>
         Inspired by{" "}
         <a href="https://brittanychiang.com/" target="_blank">
-          Brittany Chang’s
+          Brittany Chiang’s
         </a>{" "}
         aesthetic.
       </p>
