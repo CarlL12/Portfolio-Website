@@ -52,7 +52,7 @@ h3 {
 }
 .btn-green:hover {
   background-color: rgba(45, 212, 190, 0.5960784314);
-  cursor: pointer;
+  cursor: default;
 }
 
 .header-link {
@@ -159,9 +159,13 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   margin-top: 40px;
-  padding: 10px;
+  padding: 30px;
   border-radius: 10px;
   transition: background-color 0.2s ease-in-out;
+  background-color: rgba(45, 212, 190, 0.0470588235);
+}
+.experience .exp-card:hover {
+  background-color: rgba(45, 212, 190, 0.1568627451);
 }
 @media (max-width: 1000px) {
   .experience .exp-card {
@@ -170,10 +174,6 @@ h3 {
   .experience .exp-card h5 {
     font-size: 16px;
   }
-}
-.experience .exp-card:hover {
-  background-color: rgba(45, 212, 190, 0.1568627451);
-  cursor: pointer;
 }
 .projects {
   margin-top: 120px;
@@ -187,9 +187,13 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
   margin-top: 40px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 30px;
   transition: background-color 0.2s ease-in-out;
+  background-color: rgba(45, 212, 190, 0.0470588235);
+  border-radius: 10px;
+}
+.projects .project-card:hover {
+  background-color: rgba(45, 212, 190, 0.1568627451);
 }
 @media (max-width: 1000px) {
   .projects .project-card {
@@ -215,6 +219,26 @@ h3 {
 }
 .projects .project-card .social-media svg:hover {
   color: white;
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blinkCaret {
+  50% {
+    border-color: transparent;
+  }
+}
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: nowrap;
+  animation: typewriter 3s steps(30, end), blinkCaret 0.75s step-end infinite;
 }
 
 header {

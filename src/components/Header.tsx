@@ -83,13 +83,6 @@ export const Header = () => {
             size="2x"
           ></FontAwesomeIcon>
         </a>
-        <a href="">
-          <FontAwesomeIcon
-            icon={faGoogle}
-            size="2x"
-            target="_blank"
-          ></FontAwesomeIcon>
-        </a>
       </motion.div>
     </header>
   );

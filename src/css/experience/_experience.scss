@@ -5,9 +5,14 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     margin-top: 40px;
-    padding: 10px;
+    padding: 30px;
     border-radius: 10px;
     transition: background-color 0.2s ease-in-out;
+    background-color: #2dd4be0c;
+
+    &:hover {
+      background-color: #2dd4be28;
+    }
 
     @media (max-width: 1000px) {
       display: block;
@@ -16,10 +21,7 @@
         font-size: 16px;
       }
     }
-    &:hover {
-      background-color: #2dd4be28;
-      cursor: pointer;
-    }
+
     .date {
     }
     .text {
