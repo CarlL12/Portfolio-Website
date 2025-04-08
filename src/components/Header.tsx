@@ -1,20 +1,13 @@
-import {
-  faGithub,
-  faGoogle,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { motion } from "motion/react";
 import useActiveSection from "../custom-hooks/useActiveSections";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
+import { headerLinks } from "../data/headerLinks";
 
 export const Header = () => {
   const activeSection = useActiveSection();
-  const links = [
-    { id: "aboutme", text: "ABOUT" },
-    { id: "experience", text: "EXPERIENCE" },
-    { id: "projects", text: "PROJECTS" },
-    { id: "contact", text: "CONTACT" },
-  ];
+
   return (
     <header>
       <div className="header-title">
@@ -42,7 +35,7 @@ export const Header = () => {
         </motion.p>
       </div>
       <div className="links">
-        {links.map((link, index) => (
+        {headerLinks.map((link, index) => (
           <motion.a
             key={link.id}
             href={`#${link.id}`}
@@ -60,10 +53,11 @@ export const Header = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.6 }}
-          className="btn-green"
+          className="btn-green-cv d-flex align-items-center gap-1"
           href="/CV.pdf"
           download="CV.pdf"
         >
+          <FontAwesomeIcon className="me-2" icon={faFileAlt} size="2x" />
           Resume
         </motion.a>
       </div>

@@ -1,23 +1,7 @@
 import { motion } from "motion/react";
+import { techKnowledgeList } from "../data/techKnowLedgeList";
 
 const AboutMe = () => {
-  const techKnowledgeList = [
-    { text: "JavaScript" },
-    { text: ".NET" },
-    { text: "TypeScript" },
-    { text: "ASP.NET" },
-    { text: "C#" },
-    { text: "HTML" },
-    { text: "CSS" },
-    { text: "Azure" },
-    { text: "React" },
-    { text: "Umbraco" },
-    { text: "SQL" },
-    { text: "NOSQL" },
-    { text: "Blazor" },
-    { text: "Aurelia" },
-  ];
-
   return (
     <section className="about-me" id="aboutme">
       <motion.h3

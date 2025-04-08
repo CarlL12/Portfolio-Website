@@ -1,4 +1,4 @@
-import FadeInOnScroll from "../custom-hooks/fadeInOnScroll";
+import FadeInOnScroll from "./FadeInOnScroll";
 
 export const Experience = () => {
   return (

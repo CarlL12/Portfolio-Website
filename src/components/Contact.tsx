@@ -1,6 +1,5 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import FadeInOnScroll from "../custom-hooks/fadeInOnScroll";
 
 export const Contact = () => {
   return (

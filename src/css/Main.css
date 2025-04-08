@@ -55,6 +55,19 @@ h3 {
   cursor: default;
 }
 
+.btn-green-cv {
+  color: #5eead4;
+  background-color: rgba(45, 212, 190, 0.1568627451);
+  border-radius: 10px;
+  border: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease-in-out;
+  text-decoration: none;
+}
+.btn-green-cv:hover {
+  background-color: rgba(45, 212, 190, 0.5960784314);
+}
+
 .header-link {
   display: flex;
   align-items: center;

@@ -9,14 +9,14 @@ function App() {
   return (
     <>
       <div className="container content">
-        <Header></Header>
+        <Header/>
         <div className="main-content">
-          <AboutMe></AboutMe>
-          <Experience></Experience>
-          <Projects></Projects>
+          <AboutMe/>
+          <Experience/>
+          <Projects/>
         </div>
-        <Contact></Contact>
-        <Footer></Footer>
+        <Contact/>
+        <Footer/>
       </div>
     </>
   );

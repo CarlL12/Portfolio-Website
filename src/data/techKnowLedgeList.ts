@@ -1,0 +1,16 @@
+export const techKnowledgeList = [
+  { text: "JavaScript" },
+  { text: ".NET" },
+  { text: "TypeScript" },
+  { text: "ASP.NET" },
+  { text: "C#" },
+  { text: "HTML" },
+  { text: "CSS" },
+  { text: "Azure" },
+  { text: "React" },
+  { text: "Umbraco" },
+  { text: "SQL" },
+  { text: "NOSQL" },
+  { text: "Blazor" },
+  { text: "Aurelia" },
+];
