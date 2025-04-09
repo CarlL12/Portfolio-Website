@@ -2,13 +2,18 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCoffee, faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FadeInOnScroll from "./FadeInOnScroll";
-import { useRef } from "react";
-import { useInView } from "motion/react";
+import { useRef, useState } from "react";
 import { projectsList } from "../data/projectList";
+import { brewingMessagesList } from "../data/brewingMessagesList";
+import { motion } from "motion/react";
 
 export const Projects = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.5 });
+  const [index, setIndex] = useState(0);
+
+  const handleNextMessage = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % brewingMessagesList.length);
+  };
+
   return (
     <section className="projects" id="projects">
       <FadeInOnScroll>
@@ -24,7 +29,6 @@ export const Projects = () => {
               {project.description.map((text) => (
                 <p>{text}</p>
               ))}
-
               <div className="technical-btn-list">
                 {project.techStack.map((tech) => (
                   <button className="btn-green">{tech}</button>
@@ -42,20 +46,28 @@ export const Projects = () => {
 
       <FadeInOnScroll>
         <div className="project-card">
+          <p className="text-center">Personal Projects</p>
           <div className="text">
-            <p className="text-center">Personal Projects</p>
-            <p
-              ref={ref}
-              className={`text-center text-lg mt-4 ${
-                isInView ? "typewriter" : "opacity-0"
-              }`}
+            <motion.p
+              key={index}
+              className="text-lg italic"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5 }}
             >
-              No projects here *yet* — but something’s brewing...{" "}
+              {brewingMessagesList[index]}
               <FontAwesomeIcon icon={faCoffee} />{" "}
-            </p>
+            </motion.p>
             <div className="technical-btn-list"></div>
-            <div className="social-media d-flex justify-content-center">
-              <FontAwesomeIcon icon={faMugHot} beatFade size="4x" />
+            <div className="social-media d-flex justify-content-start">
+              <FontAwesomeIcon
+                onClick={handleNextMessage}
+                className="cursor-pointer"
+                icon={faMugHot}
+                beatFade
+                size="4x"
+              />
             </div>
           </div>
         </div>

@@ -55,6 +55,10 @@ h3 {
   cursor: default;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .btn-green-cv {
   color: #5eead4;
   background-color: rgba(45, 212, 190, 0.1568627451);
@@ -252,6 +256,15 @@ h3 {
   border-right: 2px solid white;
   white-space: nowrap;
   animation: typewriter 3s steps(30, end), blinkCaret 0.75s step-end infinite;
+}
+@media (max-width: 768px) {
+  .typewriter {
+    white-space: wrap;
+  }
+}
+
+.none {
+  grid-column: span 2 !important;
 }
 
 header {
