@@ -1,8 +1,9 @@
 footer {
   display: flex;
   grid-column: span 2;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 50px;
   font-size: 12px;
 
