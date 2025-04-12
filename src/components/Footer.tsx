@@ -13,8 +13,8 @@ export const Footer = () => {
         aesthetic.
       </p>
       <p>
-        Built with React + Vite, written in TypeScript, styled with Bootstrap
-        custom CSS.
+        Built with React + Vite, written in TypeScript, styled with Bootstrap,
+        and custom CSS.
       </p>
       <p>
         View the code on{" "}

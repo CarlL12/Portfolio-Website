@@ -12,7 +12,7 @@ const useActiveSection = () => {
           }
         });
       },
-      { threshold: 0.05 }
+      { threshold: 0.6 }
     );
 
     const sections = document.querySelectorAll("section");
