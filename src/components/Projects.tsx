@@ -2,7 +2,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faCoffee, faMugHot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FadeInOnScroll from "./FadeInOnScroll";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { projectsList } from "../data/projectList";
 import { brewingMessagesList } from "../data/brewingMessagesList";
 import { motion } from "motion/react";
