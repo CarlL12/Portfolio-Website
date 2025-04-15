@@ -11,12 +11,14 @@ export const Experience = () => {
             <p>{expCard.date}</p>
             <div className="text">
               <h5>{expCard.title}</h5>
-              {expCard.description.map((text) => (
-                <p>{text}</p>
+              {expCard.description.map((text, index) => (
+                <p key={index}>{text}</p>
               ))}
               <div className="technical-btn-list">
-                {expCard.techStack.map((tech) => (
-                  <button className="btn-green">{tech}</button>
+                {expCard.techStack.map((tech, index) => (
+                  <button key={index} className="btn-green">
+                    {tech}
+                  </button>
                 ))}
               </div>
             </div>

@@ -12,7 +12,7 @@ export const Footer = () => {
         </a>{" "}
         aesthetic.
       </p>
-      <p>
+      <p className="text-center">
         Built with React + Vite, written in TypeScript, styled with Bootstrap,
         and custom CSS.
       </p>

@@ -21,21 +21,23 @@ export const Projects = () => {
       </FadeInOnScroll>
 
       {projectsList.map((project, index) => (
-        <FadeInOnScroll>
-          <div key={index} className="project-card">
+        <FadeInOnScroll key={index}>
+          <div className="project-card">
             <p>{project.isPrivate ? "Personal Projects" : "EC Utbildning"}</p>
             <div className="text">
               <h5>{project.title}</h5>
-              {project.description.map((text) => (
-                <p>{text}</p>
+              {project.description.map((text, index) => (
+                <p key={index}>{text}</p>
               ))}
               <div className="technical-btn-list">
-                {project.techStack.map((tech) => (
-                  <button className="btn-green">{tech}</button>
+                {project.techStack.map((tech, index) => (
+                  <button key={index} className="btn-green">
+                    {tech}
+                  </button>
                 ))}
               </div>
               <div className="social-media">
-                <a href="" target="_blank">
+                <a href={project.gitHubLink} target="_blank">
                   <FontAwesomeIcon icon={faGithub} size="2x"></FontAwesomeIcon>
                 </a>
               </div>
@@ -60,7 +62,7 @@ export const Projects = () => {
               <FontAwesomeIcon icon={faCoffee} />{" "}
             </motion.p>
             <div className="technical-btn-list"></div>
-            <div className="social-media d-flex justify-content-start">
+            <div className="social-media coffemug">
               <FontAwesomeIcon
                 onClick={handleNextMessage}
                 className="cursor-pointer"
