@@ -1,0 +1,17 @@
+export const loadingMessagesList = [
+  "Still spinning... good things take a moment.",
+  "Loading magic — hold onto your hat! 🎩✨",
+  "Just a moment — assembling the awesome...",
+  "Loading... like a perfectly timed coffee brew ☕",
+  "Hang tight — we’re chasing some bits down the wire.",
+  "Almost there... just fluffing the pixels.",
+  "Preparing greatness — because mediocrity loads instantly.",
+  "Spinning up something special — stay curious!",
+  "Hold on... the code elves are almost done.",
+  "Loading the vibes... one byte at a time.",
+  "Sit back, relax — your data is in the oven.",
+  "Fetching bits from the digital ether — please stand by.",
+  "Just a sec — even lightning needs to warm up ⚡",
+  "Good code takes time — and we’re just marinating the logic.",
+  "Lining up the 1s and 0s — perfection is near.",
+];

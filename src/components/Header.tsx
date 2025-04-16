@@ -54,8 +54,8 @@ export const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.6, duration: 0.6 }}
           className="btn-green-cv d-flex align-items-center gap-1"
-          href="/CV.pdf"
-          download="CV.pdf"
+          href="/Carl-Lindqvist-CV.pdf"
+          download="Carl-Lindqvist-CV.pdf"
         >
           <FontAwesomeIcon className="me-2" icon={faFileAlt} size="2x" />
           Resume

@@ -1,17 +1,17 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faCoffee, faMugHot } from "@fortawesome/free-solid-svg-icons";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FadeInOnScroll from "./FadeInOnScroll";
 import { useState } from "react";
 import { projectsList } from "../data/projectList";
-import { brewingMessagesList } from "../data/brewingMessagesList";
+import { loadingMessagesList } from "../data/loadingMessagesList";
 import { motion } from "motion/react";
 
 export const Projects = () => {
   const [index, setIndex] = useState(0);
 
   const handleNextMessage = () => {
-    setIndex((prevIndex) => (prevIndex + 1) % brewingMessagesList.length);
+    setIndex((prevIndex) => (prevIndex + 1) % loadingMessagesList.length);
   };
 
   return (
@@ -58,16 +58,15 @@ export const Projects = () => {
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5 }}
             >
-              {brewingMessagesList[index]}
-              <FontAwesomeIcon icon={faCoffee} />{" "}
+              {loadingMessagesList[index]}{" "}
             </motion.p>
             <div className="technical-btn-list"></div>
             <div className="social-media coffemug">
               <FontAwesomeIcon
                 onClick={handleNextMessage}
                 className="cursor-pointer"
-                icon={faMugHot}
-                beatFade
+                icon={faSpinner}
+                spinPulse
                 size="4x"
               />
             </div>
